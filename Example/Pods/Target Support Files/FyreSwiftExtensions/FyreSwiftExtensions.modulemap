@@ -1,0 +1,6 @@
+framework module FyreSwiftExtensions {
+  umbrella header "FyreSwiftExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

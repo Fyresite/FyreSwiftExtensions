@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FyreSwiftExtensions
 
-class CustomView: UIView {
+class CustomView: UIView, NibView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -18,4 +19,10 @@ class CustomView: UIView {
     }
     */
 
+}
+
+extension CustomView {
+    func setup() {
+        self.xibSetup();
+    }
 }

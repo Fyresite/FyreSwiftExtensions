@@ -1,0 +1,6 @@
+framework module Pods_FyreSwiftExtensions_Tests {
+  umbrella header "Pods-FyreSwiftExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

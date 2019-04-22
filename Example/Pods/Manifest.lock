@@ -1,0 +1,16 @@
+PODS:
+  - FyreSwiftExtensions (0.1.0)
+
+DEPENDENCIES:
+  - FyreSwiftExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  FyreSwiftExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FyreSwiftExtensions: 8cf5bfb7fd2944547410a0a0dd6d8a8638f9e8f9
+
+PODFILE CHECKSUM: 148bb5ecc3d17b05ce55957dde21b8f550ffae09
+
+COCOAPODS: 1.7.0.beta.3

@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9DEA70D2226E6E2500E9719B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70D1226E6E2500E9719B /* CustomView.swift */; };
+		9DEA70D4226E6E6D00E9719B /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA70D3226E6E6D00E9719B /* CustomView.xib */; };
 		AC615B2D96DF964FDEF32A66 /* Pods_FyreSwiftExtensions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A437DBADBB90A2C989ACEE /* Pods_FyreSwiftExtensions_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +31,10 @@
 
 /* Begin PBXFileReference section */
 		17ABAAB27B645761FAF4CB71 /* Pods-FyreSwiftExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyreSwiftExtensions_Example.debug.xcconfig"; path = "Target Support Files/Pods-FyreSwiftExtensions_Example/Pods-FyreSwiftExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2764E6E05FADA36307A8BAAB /* FyreSwiftExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FyreSwiftExtensions.podspec; path = ../FyreSwiftExtensions.podspec; sourceTree = "<group>"; };
+		2764E6E05FADA36307A8BAAB /* FyreSwiftExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FyreSwiftExtensions.podspec; path = ../FyreSwiftExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49A437DBADBB90A2C989ACEE /* Pods_FyreSwiftExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FyreSwiftExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A5BD6BB273717079B3A9E7 /* Pods-FyreSwiftExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyreSwiftExtensions_Tests.release.xcconfig"; path = "Target Support Files/Pods-FyreSwiftExtensions_Tests/Pods-FyreSwiftExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		590DBB92DAD176801C60F4CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		590DBB92DAD176801C60F4CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FyreSwiftExtensions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyreSwiftExtensions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +47,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7DD2160DE4A761ABDADC7C16 /* Pods-FyreSwiftExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyreSwiftExtensions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FyreSwiftExtensions_Tests/Pods-FyreSwiftExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99DE2DF214C2B8B37F629A9A /* Pods_FyreSwiftExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FyreSwiftExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADA981CE0CB09DC832DE276B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9DEA70D1226E6E2500E9719B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9DEA70D3226E6E6D00E9719B /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		ADA981CE0CB09DC832DE276B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D95A39018F0B496EA9ABCAFD /* Pods-FyreSwiftExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyreSwiftExtensions_Example.release.xcconfig"; path = "Target Support Files/Pods-FyreSwiftExtensions_Example/Pods-FyreSwiftExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				9DEA70D1226E6E2500E9719B /* CustomView.swift */,
+				9DEA70D3226E6E6D00E9719B /* CustomView.xib */,
 			);
 			name = "Example for FyreSwiftExtensions";
 			path = FyreSwiftExtensions;
@@ -156,7 +162,6 @@
 				7DD2160DE4A761ABDADC7C16 /* Pods-FyreSwiftExtensions_Tests.debug.xcconfig */,
 				55A5BD6BB273717079B3A9E7 /* Pods-FyreSwiftExtensions_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				9DEA70D4226E6E6D00E9719B /* CustomView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -331,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEA70D2226E6E2500E9719B /* CustomView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

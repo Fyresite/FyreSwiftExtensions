@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import FyreSwiftExtensions
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let string = "0"
+        
+        print(string.doubleValue);
+//
+//        let dictionary = ["string": ["key": ["path": "final-key"]]];
+//
+        
+        // Should print "final-key"
+//        print(finalKey);
     }
 
 }
