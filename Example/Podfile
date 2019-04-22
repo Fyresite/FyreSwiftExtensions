@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FyreSwiftExtensions_Example' do
+  pod 'FyreSwiftExtensions', :path => '../'
+
+  target 'FyreSwiftExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
