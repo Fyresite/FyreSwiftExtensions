@@ -27,3 +27,4 @@ dellybro@gmail.com, dellybro@gmail.com
 ## License
 
 FyreSwiftExtensions is available under the MIT license. See the LICENSE file for more info.
+# FyreSwiftExtensions
