@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityIndicator" customModule="FyreSwiftExtensions" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorHeight" destination="HBa-f5-BNB" id="9bK-Ti-IO9"/>
+                <outlet property="activityIndicatorWidth" destination="9sf-1I-swn" id="Tr3-vW-4NV"/>
+                <outlet property="loaderView" destination="WAe-x3-ZlC" id="CzH-zM-8hy"/>
+                <outlet property="loadingLabel" destination="cVY-j4-21Y" id="pCw-yH-cST"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="C6s-VW-IMw">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAe-x3-ZlC" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="167" y="408" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9sf-1I-swn"/>
+                        <constraint firstAttribute="height" constant="80" id="HBa-f5-BNB"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-j4-21Y">
+                    <rect key="frame" x="20.5" y="498" width="373" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hIM-z9-Sci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cVY-j4-21Y" firstAttribute="width" secondItem="C6s-VW-IMw" secondAttribute="width" multiplier="0.9" id="0Pc-ZH-fDI"/>
+                <constraint firstItem="WAe-x3-ZlC" firstAttribute="centerY" secondItem="C6s-VW-IMw" secondAttribute="centerY" id="Mx9-QM-jVk"/>
+                <constraint firstItem="cVY-j4-21Y" firstAttribute="top" secondItem="WAe-x3-ZlC" secondAttribute="bottom" constant="10" id="TAD-g3-MGR"/>
+                <constraint firstItem="cVY-j4-21Y" firstAttribute="centerX" secondItem="C6s-VW-IMw" secondAttribute="centerX" id="gpc-qp-93p"/>
+                <constraint firstItem="WAe-x3-ZlC" firstAttribute="centerX" secondItem="C6s-VW-IMw" secondAttribute="centerX" id="kWD-V6-RxM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vEb-0C-q2y"/>
+        </view>
+    </objects>
+</document>

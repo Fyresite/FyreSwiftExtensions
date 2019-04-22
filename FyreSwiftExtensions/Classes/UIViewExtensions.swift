@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 extension UIView {
     
@@ -75,35 +76,62 @@ extension UIView {
         layer.mask = mask
     }
     
-//    func addActivityIndicator(width: CGFloat, height: CGFloat, type: NVActivityIndicatorType?, text: String?, color: UIColor?) {
-//        if self.viewWithTag(6969) != nil {
-//            return;
-//        }
-//
-//        let activityIndicator = ActivityIndicator(on: self);
-//        activityIndicator.tag = 6969;
-//        activityIndicator.activityHeight = height;
-//        activityIndicator.activityWidth = width;
-//
-//        if let type = type {
-//            activityIndicator.loaderView.type = type;
-//        }
-//
-//        if let text = text {
-//            activityIndicator.loadingLabel.text = text;
-//        }
-//
-//        if let color = color {
-//            activityIndicator.loaderView.color = color;
-//        }
-//
-//        activityIndicator.startAnimating();
-//    }
-//
-//    func removeActivityIndicator() {
-//        if let view = self.viewWithTag(6969) as? ActivityIndicator{
-//            view.stopAnimating();
-//        }
-//    }
+    /// Add an NVActivityIndicator to your UIView
+    ///
+    /// Example view.addActivityIndicator(80, 80, .pacman, "hello", UIColor.red)
+    ///     Shows an activity indicator on the view with 80 height and width, with pacman indicator type
+    ///     underneath the indicator it will say "hello" and the indicator color is red
+    ///
+    /// - Parameters: Width: CGFloat, Hieght: CGFloat, type: NVActivityIndicatorType, text: String, color: UIColor
+    /// - Returns: Void
+    public func addActivityIndicator(width: CGFloat, height: CGFloat, type: NVActivityIndicatorType?, text: String?, color: UIColor?) {
+        if self.viewWithTag(6969) != nil {
+            return;
+        }
+
+        let activityIndicator = ActivityIndicator(on: self);
+        activityIndicator.tag = 6969;
+        activityIndicator.activityHeight = height;
+        activityIndicator.activityWidth = width;
+
+        if let type = type {
+            activityIndicator.loaderView.type = type;
+        }
+
+        if let text = text {
+            activityIndicator.loadingLabel.text = text;
+        }
+
+        if let color = color {
+            activityIndicator.loaderView.color = color;
+        }
+
+        activityIndicator.startAnimating();
+    }
+    
+    /// Checks to see if a NVActivityIndicator is prsenting on your UIView
+    ///
+    /// Example let showing = view.showingActivityIndicator()
+    ///
+    /// - Parameters: N/A
+    /// - Returns: Bool
+    public func showingActivityIndicator() -> Bool {
+        if let _ = self.viewWithTag(6969) as? ActivityIndicator {
+            return true;
+        }
+        return false;
+    }
+
+    /// Checks to see if a NVActivityIndicator is prsenting on your UIView, if it is, it removes the indicator
+    ///
+    /// Example let showing = removeActivityIndicator()
+    ///
+    /// - Parameters: N/A
+    /// - Returns: N/A
+    public func removeActivityIndicator() {
+        if let view = self.viewWithTag(6969) as? ActivityIndicator {
+            view.stopAnimating();
+        }
+    }
 }
 

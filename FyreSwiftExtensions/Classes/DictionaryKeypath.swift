@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct FyreKeyPath {
+public struct KeyPath {
     var segments: [String]
     
     var isEmpty: Bool { return segments.isEmpty }
@@ -18,20 +18,20 @@ public struct FyreKeyPath {
     /// Strips off the first segment and returns a pair
     /// consisting of the first segment and the remaining key path.
     /// Returns nil if the key path has no segments.
-    func headAndTail() -> (head: String, tail: FyreKeyPath)? {
+    func headAndTail() -> (head: String, tail: KeyPath)? {
         guard !isEmpty else { return nil }
         var tail = segments
         let head = tail.removeFirst()
-        return (head, FyreKeyPath(segments: tail))
+        return (head, KeyPath(segments: tail))
     }
 }
 
-extension FyreKeyPath {
+extension KeyPath {
     init(_ string: String) {
         segments = string.components(separatedBy: ".")
     }
 }
-extension FyreKeyPath: ExpressibleByStringLiteral {
+extension KeyPath: ExpressibleByStringLiteral {
     public init(stringLiteral value: String) {
         self.init(value)
     }
@@ -43,18 +43,18 @@ extension FyreKeyPath: ExpressibleByStringLiteral {
     }
 }
 
-protocol StringProtocol {
+public protocol StringProtocol {
     init(string s: String)
 }
 
 extension String: StringProtocol {
-    init(string s: String) {
+    public init(string s: String) {
         self = s
     }
 }
 
-extension Dictionary where Key: StringProtocol {
-    subscript(keyPath keyPath: FyreKeyPath) -> Any? {
+public extension Dictionary where Key: StringProtocol {
+    subscript(keyPath keyPath: KeyPath) -> Any? {
         get {
             switch keyPath.headAndTail() {
             case nil:

@@ -1,16 +1,26 @@
 PODS:
-  - FyreSwiftExtensions (0.1.0)
+  - FyreSwiftExtensions (0.1.0):
+    - NVActivityIndicatorView
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
 
 DEPENDENCIES:
   - FyreSwiftExtensions (from `../`)
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NVActivityIndicatorView
 
 EXTERNAL SOURCES:
   FyreSwiftExtensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FyreSwiftExtensions: 8cf5bfb7fd2944547410a0a0dd6d8a8638f9e8f9
+  FyreSwiftExtensions: dc633b2ac8c4d3dd94645fb81bd059968e68419b
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
 
-PODFILE CHECKSUM: 148bb5ecc3d17b05ce55957dde21b8f550ffae09
+PODFILE CHECKSUM: c443880e9b595a3f7e64b2772c51428a0bdfd0de
 
 COCOAPODS: 1.7.0.beta.3

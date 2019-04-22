@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7po-QN-hHA">
+                                <rect key="frame" x="118" y="318.5" width="139" height="30"/>
+                                <state key="normal" title="AddActivityIndicator"/>
+                                <connections>
+                                    <action selector="activityIndicatorClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wcP-ok-9Kq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="Qro-nJ-CC9">
+                                <rect key="frame" x="67.5" y="171" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="99w-ts-Gw2"/>
+                                    <constraint firstAttribute="height" constant="128" id="GJu-Uv-lwi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7po-QN-hHA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="QBr-6s-fM9"/>
+                            <constraint firstItem="7po-QN-hHA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fLj-W1-T1R"/>
+                            <constraint firstItem="7po-QN-hHA" firstAttribute="top" secondItem="Qro-nJ-CC9" secondAttribute="bottom" constant="19.5" id="pvU-bC-H0s"/>
+                            <constraint firstItem="Qro-nJ-CC9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="wKt-YH-Gs0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityImage" destination="Qro-nJ-CC9" id="ptw-ol-ouQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="test-image" width="500" height="348"/>
+    </resources>
 </document>
