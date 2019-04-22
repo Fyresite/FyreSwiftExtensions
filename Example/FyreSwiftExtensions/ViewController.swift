@@ -23,10 +23,7 @@ class ViewController: UIViewController {
 //
         let dictionary = ["string": ["key": ["path": "final-key"]]];
         let finalKey = dictionary[keyPath: "string.key.path"] as? String;
-//
-        
-        // Should print "final-key"
-//        print(finalKey);
+        print(finalKey ?? "");
     }
     
     @IBAction func activityIndicatorClicked(_ sender: Any) {
