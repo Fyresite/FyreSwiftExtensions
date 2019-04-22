@@ -8,7 +8,9 @@
 import Foundation
 
 extension UIColor {
-    public static var FyresiteOrange =  UIColor.colorFromHex(rgb: 0xFF7F11, alpha: 1.0);
+    public static var FyresiteOrange300 = UIColor.colorFromHex(rgb: 0xFF7F11, alpha: 1.0);
+    public static var FyresiteOrange500 = UIColor.colorFromHex(rgb: 0xFF6700, alpha: 1.0);
+    public static var FyresiteOrange700 = UIColor.colorFromHex(rgb: 0xFF3F00, alpha: 1.0);
     
     class func colorFromHex(rgb: Int, alpha: CGFloat) -> UIColor {
         let components = (

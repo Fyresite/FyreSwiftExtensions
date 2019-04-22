@@ -18,6 +18,8 @@
 		9DEA70CA226E6C3B00E9719B /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70C9226E6C3B00E9719B /* NibView.swift */; };
 		9DEA70CC226E6C4F00E9719B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70CB226E6C4F00E9719B /* UIColorExtensions.swift */; };
 		9DEA70CE226E6C5F00E9719B /* DictionaryKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70CD226E6C5F00E9719B /* DictionaryKeypath.swift */; };
+		9DEA70D6226E71E100E9719B /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70D5226E71E100E9719B /* UIImageExtensions.swift */; };
+		9DEA70D8226E732900E9719B /* FyrePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA70D7226E732900E9719B /* FyrePainter.swift */; };
 		C686BA3F11C09BFBCDAA478E5DBEFD78 /* FyreSwiftExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02295323255D002F417CDBFBD57E4E48 /* FyreSwiftExtensions-dummy.m */; };
 		CDCF69CCE11209F8C13743930F90A499 /* Pods-FyreSwiftExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF336B12D43EA78D4B798E3D85B9627 /* Pods-FyreSwiftExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA51963201B0119FD96B5AF61F964624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -67,6 +69,8 @@
 		9DEA70C9226E6C3B00E9719B /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = FyreSwiftExtensions/Classes/NibView.swift; sourceTree = "<group>"; };
 		9DEA70CB226E6C4F00E9719B /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = FyreSwiftExtensions/Classes/UIColorExtensions.swift; sourceTree = "<group>"; };
 		9DEA70CD226E6C5F00E9719B /* DictionaryKeypath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DictionaryKeypath.swift; path = FyreSwiftExtensions/Classes/DictionaryKeypath.swift; sourceTree = "<group>"; };
+		9DEA70D5226E71E100E9719B /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		9DEA70D7226E732900E9719B /* FyrePainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyrePainter.swift; sourceTree = "<group>"; };
 		9E8632E9055BC2FF04615AACE65781E7 /* Pods-FyreSwiftExtensions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FyreSwiftExtensions_Example-umbrella.h"; sourceTree = "<group>"; };
 		ABF336B12D43EA78D4B798E3D85B9627 /* Pods-FyreSwiftExtensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FyreSwiftExtensions_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B1D2FA8166FFAFCB742F9621418B1671 /* FyreSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FyreSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 				9DEA70C9226E6C3B00E9719B /* NibView.swift */,
 				9DEA70CB226E6C4F00E9719B /* UIColorExtensions.swift */,
 				9DEA70CD226E6C5F00E9719B /* DictionaryKeypath.swift */,
+				9DEA70D5226E71E100E9719B /* UIImageExtensions.swift */,
+				9DEA70D7226E732900E9719B /* FyrePainter.swift */,
 			);
 			name = FyreSwiftExtensions;
 			path = ../..;
@@ -380,9 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEA70D8226E732900E9719B /* FyrePainter.swift in Sources */,
 				9DEA70CE226E6C5F00E9719B /* DictionaryKeypath.swift in Sources */,
 				C686BA3F11C09BFBCDAA478E5DBEFD78 /* FyreSwiftExtensions-dummy.m in Sources */,
 				9DEA70C6226E6C2100E9719B /* NumericExtensions.swift in Sources */,
+				9DEA70D6226E71E100E9719B /* UIImageExtensions.swift in Sources */,
 				9DEA70CA226E6C3B00E9719B /* NibView.swift in Sources */,
 				9DEA70CC226E6C4F00E9719B /* UIColorExtensions.swift in Sources */,
 				9DEA70C8226E6C2C00E9719B /* StringExtensions.swift in Sources */,
