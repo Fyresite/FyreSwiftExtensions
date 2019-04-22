@@ -22,7 +22,7 @@ pod 'FyreSwiftExtensions'
 
 ## Author
 
-dellybro@gmail.com, dellybro@gmail.com
+tdellytech@gmail.com
 
 ## License
 

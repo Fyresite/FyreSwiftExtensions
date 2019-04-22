@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-
-struct KeyPath {
+public struct FyreKeyPath {
     var segments: [String]
     
     var isEmpty: Bool { return segments.isEmpty }
@@ -20,26 +18,27 @@ struct KeyPath {
     /// Strips off the first segment and returns a pair
     /// consisting of the first segment and the remaining key path.
     /// Returns nil if the key path has no segments.
-    func headAndTail() -> (head: String, tail: KeyPath)? {
+    func headAndTail() -> (head: String, tail: FyreKeyPath)? {
         guard !isEmpty else { return nil }
         var tail = segments
         let head = tail.removeFirst()
-        return (head, KeyPath(segments: tail))
+        return (head, FyreKeyPath(segments: tail))
     }
 }
-extension KeyPath {
+
+extension FyreKeyPath {
     init(_ string: String) {
         segments = string.components(separatedBy: ".")
     }
 }
-extension KeyPath: ExpressibleByStringLiteral {
-    init(stringLiteral value: String) {
+extension FyreKeyPath: ExpressibleByStringLiteral {
+    public init(stringLiteral value: String) {
         self.init(value)
     }
-    init(unicodeScalarLiteral value: String) {
+    public init(unicodeScalarLiteral value: String) {
         self.init(value)
     }
-    init(extendedGraphemeClusterLiteral value: String) {
+    public init(extendedGraphemeClusterLiteral value: String) {
         self.init(value)
     }
 }
@@ -55,7 +54,7 @@ extension String: StringProtocol {
 }
 
 extension Dictionary where Key: StringProtocol {
-    subscript(keyPath keyPath: KeyPath) -> Any? {
+    subscript(keyPath keyPath: FyreKeyPath) -> Any? {
         get {
             switch keyPath.headAndTail() {
             case nil:

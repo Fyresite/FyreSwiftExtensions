@@ -10,7 +10,7 @@ import UIKit
 /// A base UIView subclass that instaniates a view
 /// from a nib file of the same class name in order to
 /// allow reusable views to be created.
-internal protocol NibView where Self: UIView {
+public protocol NibView where Self: UIView {
     
 }
 
@@ -18,7 +18,7 @@ extension NibView {
     
     /// Initializes the view from a xib
     /// file and configure initial constrains.
-    func xibSetup() {
+    public func xibSetup() {
         backgroundColor = .clear
         let view = loadViewFromNib()
         addEdgeConstrainedSubView(view: view)

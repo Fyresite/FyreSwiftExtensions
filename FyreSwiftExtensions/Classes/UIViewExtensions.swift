@@ -20,7 +20,7 @@ extension UIView {
     /// of its new containing view.
     ///
     /// - Parameter view: view to add as subview and constrain
-    internal func addEdgeConstrainedSubView(view: UIView) {
+    public func addEdgeConstrainedSubView(view: UIView) {
         addSubview(view)
         edgeConstrain(subView: view)
     }
@@ -29,7 +29,7 @@ extension UIView {
     /// of its containing view with a constant of 0.
     ///
     /// - Parameter subView: view to constrain to its container
-    internal func edgeConstrain(subView: UIView) {
+    public func edgeConstrain(subView: UIView) {
         subView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -68,7 +68,7 @@ extension UIView {
             ])
     }
     
-    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+    public func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
         mask.path = path.cgPath
