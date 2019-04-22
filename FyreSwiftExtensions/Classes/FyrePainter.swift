@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class FyrePainter: NSObject {
+public class FyrePainter {
     
     public class func setGradientTopCornerToBottomCorner(_ view: UIView?) {
         let gradient = CAGradientLayer()
